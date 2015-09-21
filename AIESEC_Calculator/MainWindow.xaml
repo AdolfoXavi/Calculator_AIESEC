@@ -1,0 +1,102 @@
+﻿<Window x:Class="AIESEC_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AIESEC Calculator" ResizeMode="NoResize" Height="333.5" Width="576" Icon="Images/IconCalculator.png">
+   
+   <Window.Resources>
+      <Style TargetType="{x:Type Button}" x:Key="ButtonStyle1" >
+         <Setter Property="Background" Value="#373737" />
+         <Setter Property="Foreground" Value="White" />
+         <Setter Property="FontSize" Value="25" />
+         <Setter Property="FontFamily" Value="./#Segoe UI" />
+         <Setter Property="SnapsToDevicePixels" Value="True" />
+
+         <Setter Property="Template">
+            <Setter.Value>
+               <ControlTemplate TargetType="{x:Type Button}">
+                  <Border CornerRadius="4" Background="{TemplateBinding Background}">
+                     <Grid>
+                        <ContentPresenter x:Name="ContentPresenterForButton" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                     </Grid>
+                  </Border>
+
+                  <ControlTemplate.Triggers>
+                     <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#E59400" />
+                        <Setter Property="Foreground" Value="White" />
+                     </Trigger>
+
+                     <Trigger Property="IsPressed" Value="True">
+                        <Setter Property="Background" Value="OrangeRed" />
+                        <Setter Property="Foreground" Value="White" />
+                     </Trigger>
+                  </ControlTemplate.Triggers>
+               </ControlTemplate>
+            </Setter.Value>
+         </Setter>
+      </Style>
+      <Style TargetType="{x:Type Button}" x:Key="ButtonStyle2" >
+         <Setter Property="Background" Value="#FF65A8C1" />
+         <Setter Property="Foreground" Value="White" />
+         <Setter Property="FontSize" Value="25" />
+         <Setter Property="FontFamily" Value="./#Segoe UI" />
+         <Setter Property="SnapsToDevicePixels" Value="True" />
+
+         <Setter Property="Template">
+            <Setter.Value>
+               <ControlTemplate TargetType="{x:Type Button}">
+                  <Border CornerRadius="4" Background="{TemplateBinding Background}">
+                     <Grid>
+                        <ContentPresenter x:Name="ContentPresenterForButton" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                     </Grid>
+                  </Border>
+
+                  <ControlTemplate.Triggers>
+                     <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#FF01AA11" />
+                        <Setter Property="Foreground" Value="White" />
+                     </Trigger>
+
+                     <Trigger Property="IsPressed" Value="True">
+                        <Setter Property="Background" Value="OrangeRed" />
+                        <Setter Property="Foreground" Value="White" />
+                     </Trigger>
+                  </ControlTemplate.Triggers>
+               </ControlTemplate>
+            </Setter.Value>
+         </Setter>
+      </Style>
+   </Window.Resources>
+
+   <Grid>
+      
+      <!--Numbers-->
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="7" VerticalAlignment="Top" Margin="10,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="8" VerticalAlignment="Top" Margin="65,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="9" VerticalAlignment="Top" Margin="120,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="4" VerticalAlignment="Top" Margin="10,126,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="5" VerticalAlignment="Top" Margin="65,126,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="6" VerticalAlignment="Top" Margin="120,126,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="1" VerticalAlignment="Top" Margin="10,181,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="2" VerticalAlignment="Top" Margin="65,181,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="3" VerticalAlignment="Top" Margin="120,181,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="0" VerticalAlignment="Top" Margin="10,236,0,0" HorizontalAlignment="Left" Width="105" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="." VerticalAlignment="Top" Margin="120,236,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+
+      <!--Operations-->
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="/" VerticalAlignment="Top" Margin="175,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="*" VerticalAlignment="Top" Margin="175,126,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="-" VerticalAlignment="Top" Margin="175,181,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="+" VerticalAlignment="Top" Margin="175,236,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="←" VerticalAlignment="Top" Margin="286,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="CE" VerticalAlignment="Top" Margin="342,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle2}" Height="50" Content="C" VerticalAlignment="Top" Margin="397,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Button Style="{StaticResource ButtonStyle1}" Height="50" Content="=" VerticalAlignment="Top" Margin="505,72,0,0" HorizontalAlignment="Left" Width="50" Click="Button_Click" />
+      <Border BorderThickness="1" BorderBrush="Black" Margin="10,11,0,0" HorizontalAlignment="Left" Width="545" Height="52" VerticalAlignment="Top">
+         <TextBlock Background="White" FontSize="25" FontFamily="Consolas" HorizontalAlignment="Left" Height="28" Margin="9,11,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="524" TextAlignment="Right" x:Name="ActualNumberTextBlock"/>
+      </Border>
+
+      
+      <Image HorizontalAlignment="Left" Height="112" Margin="250,148,0,0" VerticalAlignment="Top" Width="292" Source="Images/Logo.png"/>
+   </Grid>
+</Window>

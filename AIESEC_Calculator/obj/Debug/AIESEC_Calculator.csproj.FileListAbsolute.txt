@@ -1,0 +1,13 @@
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\bin\Debug\AIESEC_Calculator.exe.config
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\bin\Debug\AIESEC_Calculator.exe
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\bin\Debug\AIESEC_Calculator.pdb
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator.csprojResolveAssemblyReference.cache
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\MainWindow.baml
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\MainWindow.g.cs
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\App.g.cs
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator_MarkupCompile.cache
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator.g.resources
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator.Properties.Resources.resources
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator.csproj.GenerateResource.Cache
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator.exe
+c:\users\adolfo.lezama\documents\visual studio 2012\Projects\AIESEC_Calculator\AIESEC_Calculator\obj\Debug\AIESEC_Calculator.pdb
